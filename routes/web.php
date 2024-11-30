@@ -9,6 +9,6 @@ Route::get('/create',[NewUserController::class,'create'])->name('create');
 Route::post('/create/store',[NewUserController::class,'store'])->name('store');
 
 Route::get('/user/{id}',[NewUserController::class,'edit'])->name('edit');
-Route::patch('/user/{id}/edit',[NewUserController::class,'update'])->name('update');
+Route::post('/user/{id}/edit',[NewUserController::class,'update'])->name('update');
 
 Route::get('/user/{id}/delete',[NewUserController::class,'delete'])->name('delete');

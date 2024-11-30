@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class NewUserController extends Controller
 {
     public function index(){
-        $user=NewUsers::all();
-        return view('user.show',compact('user'));
+        $users=NewUsers::all();
+        return view('user.show',compact('users'));
     }
     public function create(){
         return view('user.create');
